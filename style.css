@@ -18,9 +18,9 @@ header{
 .log{
     text-decoration: none;
     color: blueviolet;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.1em;
+ 
+    font-weight: 900;
+    font-size: 5.1em;
 }
 .navigation a{
     color: blueviolet;
@@ -257,4 +257,5 @@ margin-top: 10px;
 }
  
    
+
 
