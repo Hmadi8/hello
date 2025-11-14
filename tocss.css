@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: whitesmoke;
+    width: 100%;
+    position: fixed;
+    z-index:999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+.log{
+    text-decoration: none;
+    color: blueviolet;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+.navigation a{
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 15px;
+}
+.navigation a:hover{
+    color: rgb(94, 28, 155);
+}
+
+/* #2 */
+
+section{
+    padding:10px 40px;
+}
+
+.min{
+    width: 100%;
+    min-height:100vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(images.jpg) no-repeat;
+    background-size:cover ;
+    background-position:center ;
+    background-attachment:fixed ;
+}
+.min h2{
+    color: rgb(94, 28, 155);
+    font-size: 1.4em;
+    font-weight: 300;
+}
+.min h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: blue;
+    font-size: 3em;
+    font-weight: 200;
+}
+.min h3{
+    color: rgb(94, 28, 155);
+    font-size: 1.4em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 20px; 
+}
+.min-buttn{
+    text-decoration: none;
+    color: whitesmoke;
+    background: rgb(94, 28, 155);
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.9375em;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: 0.7s ease;
+
+}
+.min-buttn:hover{
+    background-color:rgb(80, 33, 124) ;
+    transform: scale(1.1);
+
+}
+.icont{
+    color: whitesmoke;
+    font-size: 1.7em;
+    padding-right: 20px;
+}
+ /* #م */
+.title{
+    display: flex;
+    justify-content: center;
+    color:rgb(80, 33, 124) ;
+    font-size: 2.1em;
+    font-weight: 800;
+    margin: 30px 0 30px 0 ;
+}
+.content{
+    display: flex;
+    min-height: 100vh;
+    height: 10%;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.crat{
+   color: rgb(173, 163, 184);
+   background-color: beige;
+    width: 15.25em;
+    height: 20em;
+    box-shadow: 0  5px 25px rgba(165, 9, 9, 0.5) ;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    transition: 0.7s ease;
+
+}
+.crat:hover{
+    background-color:rgb(80, 33, 124) ;
+    transform: scale(1.1);
+
+}
+.icon{
+    color:rgb(94, 28, 155) ;
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    color: black;
+    text-align: center;
+}
+.info h3{
+    color: rebeccapurple;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.project{
+    background-color: rgb(12, 4, 44);
+}.project .content{
+    margin-top: 30px;
+
+}
+.project-cart{
+    background-color: whitesmoke;
+    border: 1px solid wheat;
+    min-height: 10em;
+    width: 15rem;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.project-cart:hover{
+    transform: scale(1.1);
+}
+.project-cart:hover .project-img {
+    opacity:0.9 ;
+}
+.project-img img{
+    width: 100%;
+}
+.project-infi{
+    padding: 1em;
+}
+.lblblblb{
+    font-size: 0.8em;
+    color: black;
+}
+
+.project-titl{
+    display: flex;
+    justify-content: space-between;
+text-transform: uppercase;
+
+font-weight: 800;
+margin-top: 10px;
+}
+.more{
+    text-decoration: none;
+    color: blueviolet;
+
+}
+.more:hover{
+    color: rgb(94, 28, 155);
+}
+
+.caert-conct .icon{
+    font-size: 4.5em;
+
+}
+.caert-conct .info h3{
+    color: black;
+    font-weight: 900;
+        margin-top: 2em;
+
+}
+.caert-conct .info p{
+    font-size:1.5em ;
+    margin-top: 2em;
+  
+}
+
+.footer{
+    background-color: rgb(12, 4, 44);
+    color: wheat;
+    padding: 1.10em;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 18px;
+
+    }
+ }
+ 
+   
