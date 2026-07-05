@@ -1,0 +1,94 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Tajawal', 'Segoe UI', sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        /* الهيدر العلوي */
+        .header {
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-bottom: 3px solid #ffd700;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 5px;
+            color: #e0e8ff;
+        }
+
+        /* القسم الذي يحتوي على الزر (منتصف الصفحة تماماً) */
+        .center-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* تصميم الزر */
+        .btn-custom {
+            padding: 18px 60px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(238, 90, 36, 0.4);
+            transition: all 0.3s ease-in-out;
+            letter-spacing: 1px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* حركات الزر عند المرور أو الضغط */
+        .btn-custom:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 15px 35px rgba(238, 90, 36, 0.6);
+            background: linear-gradient(45deg, #ee5a24, #c0392b);
+        }
+
+        .btn-custom:active {
+            transform: scale(0.95);
+            box-shadow: 0 5px 15px rgba(238, 90, 36, 0.4);
+        }
+
+        /* تذييل بسيط (اختياري) */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            color: #555;
+            font-size: 0.9rem;
+            border-top: 1px solid #ddd;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        /* تحسين للشاشات الصغيرة */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            .btn-custom {
+                padding: 14px 40px;
+                font-size: 1.2rem;
+            }
+        }

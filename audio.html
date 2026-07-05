@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="audio.css">
+<title>الملفات الصوتية</title>
+
+</head>
+<body>
+
+  <header>
+    <h1>🎧 الملفات الصوتية</h1>
+    <a href="index.html" class="back-link">➡ رجوع للرئيسية</a>
+  </header>
+
+  <main>
+
+    <div class="audio-card">
+      <span class="audio-title">ملف صوتي 1</span>
+      <button class="play-btn" onclick="toggleAudio(this, 'audio1')">▶</button>
+      <audio id="audio1" src="https://server11.mp3quran.net/yasser/055.mp3"></audio>
+    </div>
+
+    <div class="audio-card">
+      <span class="audio-title">ملف صوتي 2</span>
+      <button class="play-btn" onclick="toggleAudio(this, 'audio2')">▶</button>
+      <audio id="audio2" src="https://server11.mp3quran.net/a_jbr/018.mp3"></audio>
+    </div>
+
+    <div class="audio-card">
+      <span class="audio-title">ملف صوتي 3</span>
+      <button class="play-btn" onclick="toggleAudio(this, 'audio3')">▶</button>
+      <audio id="audio3" src="https://server11.mp3quran.net/sds/002.mp3"></audio>
+    </div>
+
+  </main>
+
+  <footer>
+    جميع الحقوق محفوظة © 2026
+  </footer>
+
+<script>
+  function toggleAudio(btn, audioId) {
+    const audio = document.getElementById(audioId);
+
+    // أوقف أي ملف صوتي آخر يعمل حالياً
+    document.querySelectorAll('audio').forEach(a => {
+      if (a.id !== audioId && !a.paused) {
+        a.pause();
+        a.currentTime = 0;
+        const otherBtn = document.querySelector(`button[onclick*="${a.id}"]`);
+        if (otherBtn) otherBtn.textContent = '▶';
+      }
+    });
+
+    if (audio.paused) {
+      audio.play();
+      btn.textContent = '⏸';
+    } else {
+      audio.pause();
+      btn.textContent = '▶';
+    }
+
+    audio.onended = () => { btn.textContent = '▶'; };
+  }
+</script>
+
+</body>
+</html>
